@@ -1,13 +1,13 @@
 site:
   title: Aviatrix web
   url: https://aliceliudoc.github.io/doc-web.git
-  start_page: index::index.adoc
+  start_page: docs:index.adoc
 content:
   sources:
-  - url: . # common module containing just the main index
-    start_path: docs
-    branches: main
   - url: https://github.com/aliceliudoc/doc-web.git
+    start_path: docs
+    branches: master
+  
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
