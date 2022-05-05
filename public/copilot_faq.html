@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Aviatrix CoPilot FAQs :: Aviatrix web</title>
+    <link rel="canonical" href="https://github.com/aliceliudoc/doc-web.git/copilot_faq.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="./_/css/site.css">
+    <script>var uiRootPath = './_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/aliceliudoc/doc-web.git">Aviatrix web</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title"></span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html"></a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="index/index/index.html">Index</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="index/index/index.html">index</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index/index/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/aliceliudoc/doc-web/edit/main/modules/ROOT/pages/copilot_faq.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Aviatrix CoPilot FAQs</h1>
+<div class="sect1">
+<h2 id="_what_is_the_default_login_for_copilot"><a class="anchor" href="#_what_is_the_default_login_for_copilot"></a>What is the default login for CoPilot?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CoPilot authenticates against the Aviatrix Controller list of local
+users.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_are_the_traffic_flow_records_coming_from_controller_or_gateways"><a class="anchor" href="#_are_the_traffic_flow_records_coming_from_controller_or_gateways"></a>Are the traffic flow records coming from controller or gateways?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The flows are sent from the Aviatrix gateways directly to CoPilot&#8217;s
+instance.</p>
+</div>
+<div class="paragraph">
+<p>How do ThreatGuard firewall policies interact with existing/new firewall
+policies applied to the same gateways?</p>
+</div>
+<div class="paragraph">
+<p>The ThreatGuard drop policies are in addition to the existing firewall
+policies applied to the same gateways.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_protocol_does_copilot_use_to_talk_to_its_controller"><a class="anchor" href="#_what_protocol_does_copilot_use_to_talk_to_its_controller"></a>What protocol does CoPilot use to talk to its controller?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CoPilot uses REST APIs and HTTPS to communicate with its controller.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_long_does_it_take_for_data_to_start_showing_in_flowiq"><a class="anchor" href="#_how_long_does_it_take_for_data_to_start_showing_in_flowiq"></a>How long does it take for data to start showing in FlowIQ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It may take about 5 minutes for flow data to appear in the CoPilot UI.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_are_updates_handled_can_i_configure_the_update_process"><a class="anchor" href="#_how_are_updates_handled_can_i_configure_the_update_process"></a>How are updates handled? Can I configure the update process?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Updates are downloaded and applied automatically. The update process
+runs every 60 minutes. To stop updates, you can stop the update service
+under Settings &gt; Services.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_the_smallest_recommended_instancevm_size"><a class="anchor" href="#_what_is_the_smallest_recommended_instancevm_size"></a>What is the smallest recommended Instance/VM size?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For production deployments, minimum requirement is 8vCPU and 32G of
+Memory</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_can_i_configure_flows_to_be_sent_over_private_ips"><a class="anchor" href="#_can_i_configure_flows_to_be_sent_over_private_ips"></a>Can I configure flows to be sent over private IPs?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CoPilot does not set up a private overlay between the gateways and
+itself. If a private communication path between the gateways and CoPilot
+is available, then you can use CoPilot’s private IP when you input the
+collector IP in the controller. For example, if you have an Aviatrix
+transit gateway, and you put CoPilot in one of the spokes, then you can
+use CoPilot’s private IP as the destination.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_does_copilot_hold_any_user_or_sensitive_data"><a class="anchor" href="#_does_copilot_hold_any_user_or_sensitive_data"></a>Does CoPilot hold any user or sensitive data?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CoPilot does not hold user-identifiable or payment processing
+information. CoPilot does not hold credentials on the appliance’s
+storage. However, it is always recommended to follow security best
+practices for a secure CoPilot deployment.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_can_i_encrypt_volumes_for_copilot"><a class="anchor" href="#_can_i_encrypt_volumes_for_copilot"></a>Can I Encrypt Volumes for CoPilot?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Yes, you can encrypt disks (volumes) that you allocate to your CoPilot
+deployment. You enable the encryption via your cloud service provider.
+Refer to your cloud service provider for information about enabling disk
+(volume) encryption.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_does_copilot_get_its_data"><a class="anchor" href="#_how_does_copilot_get_its_data"></a>How does CoPilot get its data?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>1.Controller APIs</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>CoPilot makes API calls into the controller to retrieve information.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>2.Flow records</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Aviatrix Gateways generate and export information about network traffic.
+Flows come directly from Gateways to CoPilot.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_if_controller_ip_changes_and_if_copilot_is_associated_with_an_old_controller_ip_how_to_login_into_copilot"><a class="anchor" href="#_if_controller_ip_changes_and_if_copilot_is_associated_with_an_old_controller_ip_how_to_login_into_copilot"></a>If Controller IP changes and if copilot is associated with an old controller IP, how to login into Copilot?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are logged in to copilot go to Copilot UI &#8594; Settings and click
+on the 'Reset controller IP' button. It will prompt you to enter the new
+Controller IP address and service account credentials.</p>
+</div>
+<div class="paragraph">
+<p>If you are logged out of Copilot, please open a support ticket at
+<a href="https://support.aviatrix.com">Aviatrix Support Portal</a> for a solution.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_is_flowiq_showing_realtime_traffic"><a class="anchor" href="#_is_flowiq_showing_realtime_traffic"></a>Is FlowIQ showing realtime traffic?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Flow records are generated by the Gateways. The agent on the Gateways
+observes and keeps track of the flows and as soon as a particular flow
+ends, or if the flow expiry interval is reached, the flow record is sent
+to CoPilot.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_can_the_data_retention_be_adjusted"><a class="anchor" href="#_can_the_data_retention_be_adjusted"></a>Can the data retention be adjusted ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Today you can set a threshold based on disk space available, so that you
+can remove the old records.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_can_we_turn_topology_tunnels_redgreen_based_on_tunnel_status"><a class="anchor" href="#_can_we_turn_topology_tunnels_redgreen_based_on_tunnel_status"></a>Can we turn topology tunnels Red/Green based on tunnel status ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The tunnels are responsive to the state of the link.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_can_we_provide_bandwidth_details_of_linkstunnels"><a class="anchor" href="#_can_we_provide_bandwidth_details_of_linkstunnels"></a>Can we provide bandwidth details of links/tunnels ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you can specify source and destination for the two endpoints of the
+path (gateways), you can obtain this information from FlowIQ by using
+filters.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_do_i_get_an_error_failed_to_fetch_topology_when_i_open_the_topology_page"><a class="anchor" href="#_why_do_i_get_an_error_failed_to_fetch_topology_when_i_open_the_topology_page"></a>Why do I get an error Failed to fetch Topology when I open the Topology page?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you get the error <strong>Failed to fetch Topology data</strong>, CoPilot was unable
+to access the data it needs for topology. If the issue persists, Contact
+Aviatrix Support.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_can_i_get_my_additional_questions_answered"><a class="anchor" href="#_how_can_i_get_my_additional_questions_answered"></a>How can I get my additional questions answered ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Visit Aviatrix.com and use the live chat icon to talk to a live expert.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="./_/js/site.js"></script>
+<script async src="./_/js/vendor/highlight.js"></script>
+  </body>
+</html>
