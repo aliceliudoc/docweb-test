@@ -1,3 +1,5 @@
-= Tour of heroes documentations
+= Test
 
 This is the documentation for Tour of heroes project.
+
+Welcome to the Asciidoctor documentation site! Here you can find the reference material, guides, and examples to write content in AsciiDoc and publish it using Asciidoctor. This documentation will help you start your journey with AsciiDoc or dive deeper if you’re already well on your way.
