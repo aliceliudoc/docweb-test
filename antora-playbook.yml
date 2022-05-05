@@ -6,7 +6,7 @@ content:
   sources:
   - url: . # common module containing just the main index
     start_path: docs
-    branches: main
+    branches: HEAD
   - url: https://github.com/aliceliudoc/docweb-test.git
 ui:
   bundle:
