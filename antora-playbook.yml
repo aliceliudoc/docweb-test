@@ -1,12 +1,12 @@
 site:
   title: Aviatrix web
-  url: https://aliceliudoc..github.io/doc-web.git
+  url: https://aliceliudoc.github.io/doc-web.git
   start_page: index::index.adoc
 content:
   sources:
   - url: . # common module containing just the main index
     start_path: docs
-    branches: HEAD
+    branches: main
   - url: https://github.com/aliceliudoc/doc-web.git
 ui:
   bundle:
