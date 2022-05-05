@@ -1,0 +1,14 @@
+site:
+  title: antora playweb
+  url: https://aliceliudoc.github.io/docweb-test
+  start_page: index::index.adoc
+content:
+  sources:
+  - url: . # common module containing just the main index
+    start_path: docs
+    branches: main
+  - url: https://github.com/aliceliudoc/docweb-test.git
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
