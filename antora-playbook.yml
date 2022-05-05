@@ -1,14 +1,16 @@
 site:
-  title: antora playweb
-  url: https://aliceliudoc.github.io/docweb-test
+  title: Aviatrix web
+  url: https://aliceliudoc..github.io/doc-web.git
   start_page: index::index.adoc
 content:
   sources:
   - url: . # common module containing just the main index
     start_path: docs
     branches: HEAD
-  - url: https://github.com/aliceliudoc/docweb-test.git
+  - url: https://github.com/aliceliudoc/doc-web.git
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+output:
+    dir: ./public
